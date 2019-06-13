@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1643963122B18B7800EA34BD /* AddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643963022B18B7800EA34BD /* AddsViewController.swift */; };
+		68ED770622B2371500AAC99F /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */; };
+		68ED770822B2394500AAC99F /* MainTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770722B2394500AAC99F /* MainTasksViewController.swift */; };
+		68ED770E22B2445000AAC99F /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770D22B2445000AAC99F /* RoundImageView.swift */; };
 		959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8D122ADDE88006BB7DE /* AppDelegate.swift */; };
 		959CC8D722ADDE88006BB7DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D522ADDE88006BB7DE /* Main.storyboard */; };
 		959CC8D922ADDE8A006BB7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D822ADDE8A006BB7DE /* Assets.xcassets */; };
@@ -20,13 +23,16 @@
 		959CC8FB22ADE022006BB7DE /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8FA22ADE022006BB7DE /* NetworkingManager.swift */; };
 		959CC8FD22ADE03C006BB7DE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8FC22ADE03C006BB7DE /* Networking.swift */; };
 		959CC8FF22ADE04E006BB7DE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8FE22ADE04E006BB7DE /* SessionManager.swift */; };
-		E9E281073A67B08436BB7837 /* Pods_HappyPawsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B86258EE5EBE259943389D2 /* Pods_HappyPawsiOS.framework */; };
+		A9601BFC099881C0FA4AA8AE /* Pods_HappyPawsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86976DD794E7BD8C9CD8B6FF /* Pods_HappyPawsiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1643963022B18B7800EA34BD /* AddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddsViewController.swift; path = HappyPawsiOS/AddsViewController.swift; sourceTree = SOURCE_ROOT; };
-		2B86258EE5EBE259943389D2 /* Pods_HappyPawsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyPawsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4604A6EA46FEE6CAFBEA8719 /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
+		68ED770722B2394500AAC99F /* MainTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTasksViewController.swift; path = "HappyPawsiOS/Custom Views/MainTasksViewController.swift"; sourceTree = SOURCE_ROOT; };
+		68ED770D22B2445000AAC99F /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		86976DD794E7BD8C9CD8B6FF /* Pods_HappyPawsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyPawsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4840BD711578433E8FDE7D /* Pods-HappyPawsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		959CC8CE22ADDE88006BB7DE /* HappyPawsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPawsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959CC8D122ADDE88006BB7DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959CC8D622ADDE88006BB7DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,7 +47,7 @@
 		959CC8FA22ADE022006BB7DE /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		959CC8FC22ADE03C006BB7DE /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		959CC8FE22ADE04E006BB7DE /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		DF167084B45C73F8DEDBE7D3 /* Pods-HappyPawsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.release.xcconfig"; path = "Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.release.xcconfig"; sourceTree = "<group>"; };
+		B39F84C2A235AFAEA224482B /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,19 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E281073A67B08436BB7837 /* Pods_HappyPawsiOS.framework in Frameworks */,
+				A9601BFC099881C0FA4AA8AE /* Pods_HappyPawsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35C848B0C47F927A3FDF8BAB /* Frameworks */ = {
+		2E38C01F2E822CFD0802133D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B86258EE5EBE259943389D2 /* Pods_HappyPawsiOS.framework */,
+				86976DD794E7BD8C9CD8B6FF /* Pods_HappyPawsiOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37DCA66B10ADC2A8E7A9FC2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B39F84C2A235AFAEA224482B /* Pods-HappyPawsiOS.debug.xcconfig */,
+				8C4840BD711578433E8FDE7D /* Pods-HappyPawsiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68ED770422B236E700AAC99F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */,
+				68ED770D22B2445000AAC99F /* RoundImageView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		959CC8C522ADDE88006BB7DE = {
@@ -69,8 +93,8 @@
 			children = (
 				959CC8D022ADDE88006BB7DE /* HappyPawsiOS */,
 				959CC8CF22ADDE88006BB7DE /* Products */,
-				BC5F2606106508743E13816D /* Pods */,
-				35C848B0C47F927A3FDF8BAB /* Frameworks */,
+				37DCA66B10ADC2A8E7A9FC2A /* Pods */,
+				2E38C01F2E822CFD0802133D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +109,7 @@
 		959CC8D022ADDE88006BB7DE /* HappyPawsiOS */ = {
 			isa = PBXGroup;
 			children = (
+				68ED770422B236E700AAC99F /* Custom Views */,
 				959CC8EC22ADDF49006BB7DE /* App */,
 				959CC8E522ADDED0006BB7DE /* Models */,
 				959CC8ED22ADDF71006BB7DE /* Storyboards */,
@@ -145,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				1643963022B18B7800EA34BD /* AddsViewController.swift */,
+				68ED770722B2394500AAC99F /* MainTasksViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,15 +209,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		BC5F2606106508743E13816D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4604A6EA46FEE6CAFBEA8719 /* Pods-HappyPawsiOS.debug.xcconfig */,
-				DF167084B45C73F8DEDBE7D3 /* Pods-HappyPawsiOS.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,11 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 959CC8E022ADDE8A006BB7DE /* Build configuration list for PBXNativeTarget "HappyPawsiOS" */;
 			buildPhases = (
-				20B36C7B5C9DFE7760F13BBB /* [CP] Check Pods Manifest.lock */,
+				999FAF6D34E7C6AC9413CE25 /* [CP] Check Pods Manifest.lock */,
 				959CC8CA22ADDE88006BB7DE /* Sources */,
 				959CC8CB22ADDE88006BB7DE /* Frameworks */,
 				959CC8CC22ADDE88006BB7DE /* Resources */,
-				15E97194F5CC3F53B8D3CEC3 /* [CP] Embed Pods Frameworks */,
+				E1BDC34A01EFB1A30FF4C10B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,24 +282,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15E97194F5CC3F53B8D3CEC3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20B36C7B5C9DFE7760F13BBB /* [CP] Check Pods Manifest.lock */ = {
+		999FAF6D34E7C6AC9413CE25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,6 +304,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E1BDC34A01EFB1A30FF4C10B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,10 +335,13 @@
 			files = (
 				1643963122B18B7800EA34BD /* AddsViewController.swift in Sources */,
 				959CC8FB22ADE022006BB7DE /* NetworkingManager.swift in Sources */,
+				68ED770822B2394500AAC99F /* MainTasksViewController.swift in Sources */,
 				959CC8EB22ADDF2F006BB7DE /* User.swift in Sources */,
 				959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */,
 				959CC8FF22ADE04E006BB7DE /* SessionManager.swift in Sources */,
+				68ED770622B2371500AAC99F /* PetCollectionViewCell.swift in Sources */,
 				959CC8FD22ADE03C006BB7DE /* Networking.swift in Sources */,
+				68ED770E22B2445000AAC99F /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,11 +485,11 @@
 		};
 		959CC8E122ADDE8A006BB7DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4604A6EA46FEE6CAFBEA8719 /* Pods-HappyPawsiOS.debug.xcconfig */;
+			baseConfigurationReference = B39F84C2A235AFAEA224482B /* Pods-HappyPawsiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = P5Y97WC5V3;
 				INFOPLIST_FILE = "$(SRCROOT)/HappyPawsiOS/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,11 +504,11 @@
 		};
 		959CC8E222ADDE8A006BB7DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF167084B45C73F8DEDBE7D3 /* Pods-HappyPawsiOS.release.xcconfig */;
+			baseConfigurationReference = 8C4840BD711578433E8FDE7D /* Pods-HappyPawsiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = P5Y97WC5V3;
 				INFOPLIST_FILE = "$(SRCROOT)/HappyPawsiOS/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

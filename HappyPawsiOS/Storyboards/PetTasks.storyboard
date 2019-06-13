@@ -1,7 +1,361 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qUG-kW-p2E">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Main Tasks View Controller-->
+        <scene sceneID="yoA-Rz-lee">
+            <objects>
+                <viewController id="qUG-kW-p2E" customClass="MainTasksViewController" customModule="HappyPawsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcd-Rp-WKz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvr-fx-Lei">
+                                <rect key="frame" x="247" y="64" width="147" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <state key="normal" title="Nueva Mascota">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-es-fcc">
+                                <rect key="frame" x="41.5" y="278" width="331" height="60"/>
+                                <color key="backgroundColor" red="0.61638754610000002" green="0.71061468120000004" blue="0.6627408266" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3eI-Dd-Aob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <state key="normal" title="Nueva Actividad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IPi-yN-ZTw" userLabel="Tasks Collection View">
+                                <rect key="frame" x="0.0" y="108" width="414" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hv0-5K-TQD"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fid-NG-g0O">
+                                    <size key="itemSize" width="185" height="109"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Pet1" id="Ol0-rN-o2C" customClass="PetCollectionViewCell" customModule="HappyPawsiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20.5" width="185" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet1" translatesAutoresizingMaskIntoConstraints="NO" id="Cze-0a-arf" customClass="RoundImageView" customModule="HappyPawsiOS" customModuleProvider="target">
+                                                    <rect key="frame" x="38" y="0.0" width="109" height="109"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Cze-0a-arf" secondAttribute="height" multiplier="1:1" id="4Vw-xK-exm"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Cze-0a-arf" firstAttribute="centerX" secondItem="Ol0-rN-o2C" secondAttribute="centerX" id="QlD-ls-Lic"/>
+                                            <constraint firstItem="Cze-0a-arf" firstAttribute="top" secondItem="Ol0-rN-o2C" secondAttribute="top" id="ZaB-8R-PuP"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cze-0a-arf" secondAttribute="bottom" id="tOp-AW-6Nf"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Pet2" id="aG1-9a-yRp" customClass="PetCollectionViewCell" customModule="HappyPawsiOS" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="20.5" width="185" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet2" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-3Q-1Wn" customClass="RoundImageView" customModule="HappyPawsiOS" customModuleProvider="target">
+                                                    <rect key="frame" x="38" y="0.0" width="109" height="109"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="gTN-3Q-1Wn" secondAttribute="height" multiplier="1:1" id="RDF-Qy-7nd"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="gTN-3Q-1Wn" firstAttribute="centerX" secondItem="aG1-9a-yRp" secondAttribute="centerX" id="efn-4R-sP2"/>
+                                            <constraint firstAttribute="bottom" secondItem="gTN-3Q-1Wn" secondAttribute="bottom" id="mSc-Pc-0gV"/>
+                                            <constraint firstItem="gTN-3Q-1Wn" firstAttribute="top" secondItem="aG1-9a-yRp" secondAttribute="top" id="xdb-X0-lqZ"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Pet3" id="rj3-lQ-MhC" customClass="PetCollectionViewCell" customModule="HappyPawsiOS" customModuleProvider="target">
+                                        <rect key="frame" x="390" y="20.5" width="185" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet3" translatesAutoresizingMaskIntoConstraints="NO" id="1d6-XW-Cj2" customClass="RoundImageView" customModule="HappyPawsiOS" customModuleProvider="target">
+                                                    <rect key="frame" x="38" y="0.0" width="109" height="109"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="1d6-XW-Cj2" secondAttribute="height" multiplier="1:1" id="bXe-xR-hxA"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1d6-XW-Cj2" firstAttribute="centerX" secondItem="rj3-lQ-MhC" secondAttribute="centerX" id="LlU-mS-Wk8"/>
+                                            <constraint firstItem="1d6-XW-Cj2" firstAttribute="top" secondItem="rj3-lQ-MhC" secondAttribute="top" id="Occ-gh-Mlu"/>
+                                            <constraint firstAttribute="bottom" secondItem="1d6-XW-Cj2" secondAttribute="bottom" id="a95-Zj-F10"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qUG-kW-p2E" id="Byv-sf-NS6"/>
+                                    <outlet property="delegate" destination="qUG-kW-p2E" id="Ufa-lg-5Cb"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recomendaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSs-c0-NM0">
+                                <rect key="frame" x="31.5" y="368" width="132.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDJ-SA-oSh">
+                                <rect key="frame" x="31.5" y="412.5" width="351" height="449.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt2-LL-k4C" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="457.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="x6a-qY-Ggy" userLabel="Recomendations Stack View">
+                                                <rect key="frame" x="20" y="20" width="311" height="417.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-zf-Wf1" userLabel="Row Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="59.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Uxf-Ji-PH9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="59.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Uxf-Ji-PH9" secondAttribute="height" multiplier="1:1" id="l9R-bX-qlu"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-cW-s6D">
+                                                                <rect key="frame" x="79.5" y="0.0" width="231.5" height="59.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Visitar al veterinario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-AD-791">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="21"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Cada 6 meses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DW-uy-5ce">
+                                                                        <rect key="frame" x="0.0" y="35" width="231.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Uxf-Ji-PH9" firstAttribute="height" secondItem="dNf-cW-s6D" secondAttribute="height" id="a6g-g9-wkj"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-5U-Z90" userLabel="Row Stack View">
+                                                        <rect key="frame" x="0.0" y="89.5" width="311" height="59.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw-icon" translatesAutoresizingMaskIntoConstraints="NO" id="0wG-N7-Cg9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="59.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="0wG-N7-Cg9" secondAttribute="height" multiplier="1:1" id="yyz-Kc-Zlo"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Kfu-H2-q3x">
+                                                                <rect key="frame" x="79.5" y="0.0" width="231.5" height="59.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Cortar garras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9x-xg-J6P">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="21"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Cada 2 semanas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkJ-Hk-Iob">
+                                                                        <rect key="frame" x="0.0" y="35" width="231.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="0wG-N7-Cg9" firstAttribute="height" secondItem="Kfu-H2-q3x" secondAttribute="height" id="4jP-WI-6Vq"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sei-m0-mzv" userLabel="Row Stack View">
+                                                        <rect key="frame" x="0.0" y="179" width="311" height="59.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw-icon" translatesAutoresizingMaskIntoConstraints="NO" id="JIi-KW-DnT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="59.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="JIi-KW-DnT" secondAttribute="height" multiplier="1:1" id="efy-nU-ugL"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TqW-PK-TaF">
+                                                                <rect key="frame" x="79.5" y="0.0" width="231.5" height="59.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Vacunas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nl-U4-qmE">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="21"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Anualmente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blJ-Lk-5iF">
+                                                                        <rect key="frame" x="0.0" y="35" width="231.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="JIi-KW-DnT" firstAttribute="height" secondItem="TqW-PK-TaF" secondAttribute="height" id="jlO-Ee-Hhz"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yN2-Aj-wD7" userLabel="Row Stack View">
+                                                        <rect key="frame" x="0.0" y="268.5" width="311" height="59.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw-icon" translatesAutoresizingMaskIntoConstraints="NO" id="POo-P7-DPS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="59.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="POo-P7-DPS" secondAttribute="height" multiplier="1:1" id="YAu-X5-S7B"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H9h-n6-KrZ">
+                                                                <rect key="frame" x="79.5" y="0.0" width="231.5" height="59.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Alimentar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h01-cJ-SOG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="21"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="3 veces al día" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2v6-Ve-gmX">
+                                                                        <rect key="frame" x="0.0" y="35" width="231.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="POo-P7-DPS" firstAttribute="height" secondItem="H9h-n6-KrZ" secondAttribute="height" id="Uwg-WP-tCc"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-vr-C6M" userLabel="Row Stack View">
+                                                        <rect key="frame" x="0.0" y="358" width="311" height="59.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw-icon" translatesAutoresizingMaskIntoConstraints="NO" id="C5P-HQ-ETz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="59.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="C5P-HQ-ETz" secondAttribute="height" multiplier="1:1" id="vIW-lB-Ezy"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XbM-lw-Dow">
+                                                                <rect key="frame" x="79.5" y="0.0" width="231.5" height="59.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Desparasitador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx9-0d-Zuz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="21"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Una vez al mes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO9-mx-5cQ">
+                                                                        <rect key="frame" x="0.0" y="35" width="231.5" height="24.5"/>
+                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="C5P-HQ-ETz" firstAttribute="height" secondItem="XbM-lw-Dow" secondAttribute="height" id="u9n-or-eMM"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="s8i-vr-C6M" firstAttribute="leading" secondItem="x6a-qY-Ggy" secondAttribute="leading" id="F3D-Wc-Dlh"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="x6a-qY-Ggy" firstAttribute="top" secondItem="Yt2-LL-k4C" secondAttribute="top" constant="20" id="Bqk-a2-M2r"/>
+                                            <constraint firstAttribute="bottom" secondItem="x6a-qY-Ggy" secondAttribute="bottom" constant="20" id="M8a-A7-9TB"/>
+                                            <constraint firstAttribute="trailing" secondItem="x6a-qY-Ggy" secondAttribute="trailing" constant="20" id="dFt-sv-NpQ"/>
+                                            <constraint firstItem="x6a-qY-Ggy" firstAttribute="leading" secondItem="Yt2-LL-k4C" secondAttribute="leading" constant="20" id="dkd-B8-HkH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Yt2-LL-k4C" secondAttribute="trailing" id="62j-fl-vo8"/>
+                                    <constraint firstItem="Yt2-LL-k4C" firstAttribute="top" secondItem="XDJ-SA-oSh" secondAttribute="top" id="kN4-e8-kVg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yt2-LL-k4C" secondAttribute="bottom" id="kS5-fw-e0I"/>
+                                    <constraint firstItem="Yt2-LL-k4C" firstAttribute="leading" secondItem="XDJ-SA-oSh" secondAttribute="leading" id="lqI-mT-crj"/>
+                                    <constraint firstItem="Yt2-LL-k4C" firstAttribute="width" secondItem="XDJ-SA-oSh" secondAttribute="width" id="nR9-2L-u58"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94510442019999996" green="0.94508665800000002" blue="0.94509869810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RNB-es-fcc" firstAttribute="top" secondItem="IPi-yN-ZTw" secondAttribute="bottom" constant="20" id="0wb-FL-um0"/>
+                            <constraint firstItem="Wvr-fx-Lei" firstAttribute="top" secondItem="a3i-LI-X9M" secondAttribute="top" constant="20" id="1hi-sv-qEC"/>
+                            <constraint firstItem="RNB-es-fcc" firstAttribute="width" secondItem="dcd-Rp-WKz" secondAttribute="width" multiplier="0.8" id="2Uo-v4-EWp"/>
+                            <constraint firstItem="IPi-yN-ZTw" firstAttribute="top" secondItem="Wvr-fx-Lei" secondAttribute="bottom" id="69x-0F-Zah"/>
+                            <constraint firstItem="a3i-LI-X9M" firstAttribute="trailing" secondItem="Wvr-fx-Lei" secondAttribute="trailing" constant="20" id="BT2-W4-EsO"/>
+                            <constraint firstItem="IPi-yN-ZTw" firstAttribute="leading" secondItem="a3i-LI-X9M" secondAttribute="leading" id="MGY-ik-GcI"/>
+                            <constraint firstItem="XDJ-SA-oSh" firstAttribute="top" secondItem="eSs-c0-NM0" secondAttribute="bottom" constant="20" id="XZY-5E-fsf"/>
+                            <constraint firstItem="a3i-LI-X9M" firstAttribute="trailing" secondItem="IPi-yN-ZTw" secondAttribute="trailing" id="dg9-Aj-vWH"/>
+                            <constraint firstItem="a3i-LI-X9M" firstAttribute="bottom" secondItem="XDJ-SA-oSh" secondAttribute="bottom" id="h2t-zh-uci"/>
+                            <constraint firstItem="eSs-c0-NM0" firstAttribute="top" secondItem="RNB-es-fcc" secondAttribute="bottom" constant="30" id="iRT-5K-b1x"/>
+                            <constraint firstItem="XDJ-SA-oSh" firstAttribute="trailing" secondItem="RNB-es-fcc" secondAttribute="trailing" constant="10" id="oNO-Fc-M9m"/>
+                            <constraint firstItem="eSs-c0-NM0" firstAttribute="leading" secondItem="RNB-es-fcc" secondAttribute="leading" constant="-10" id="qQ9-fY-D0f"/>
+                            <constraint firstItem="RNB-es-fcc" firstAttribute="centerX" secondItem="IPi-yN-ZTw" secondAttribute="centerX" id="xJu-ol-EFz"/>
+                            <constraint firstItem="Yt2-LL-k4C" firstAttribute="centerX" secondItem="a3i-LI-X9M" secondAttribute="centerX" id="xXg-E9-exg"/>
+                            <constraint firstItem="XDJ-SA-oSh" firstAttribute="leading" secondItem="RNB-es-fcc" secondAttribute="leading" constant="-10" id="z3c-rF-WwV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a3i-LI-X9M"/>
+                    </view>
+                    <connections>
+                        <outlet property="tasksCollectionView" destination="IPi-yN-ZTw" id="kPe-da-Keh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLd-xU-Lf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paw-icon" width="34.666667938232422" height="34.666667938232422"/>
+        <image name="pet1" width="550" height="600"/>
+        <image name="pet2" width="433" height="650"/>
+        <image name="pet3" width="564" height="519"/>
+    </resources>
 </document>
