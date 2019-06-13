@@ -163,12 +163,9 @@
 		959CC8F722ADDFD5006BB7DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */,
 				83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */,
-=======
 				1643963022B18B7800EA34BD /* AddsViewController.swift */,
->>>>>>> master
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,11 +211,7 @@
 				12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */,
 				F74EE64530AE8C3DF7DD9C2C /* Pods-HappyPawsiOS.release.xcconfig */,
 			);
-<<<<<<< HEAD
 			name = Pods;
-=======
-			path = Pods;
->>>>>>> master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,14 +293,10 @@
 			files = (
 			);
 			inputFileListPaths = (
-<<<<<<< HEAD
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-=======
-				"${PODS_ROOT}/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
->>>>>>> master
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
