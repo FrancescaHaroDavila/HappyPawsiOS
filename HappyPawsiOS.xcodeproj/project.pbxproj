@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */; };
 		83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471C22B212150045ACD5 /* CellProtocol.swift */; };
 		83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */; };
-=======
 		1643963122B18B7800EA34BD /* AddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643963022B18B7800EA34BD /* AddsViewController.swift */; };
->>>>>>> master
 		959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8D122ADDE88006BB7DE /* AppDelegate.swift */; };
 		959CC8D722ADDE88006BB7DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D522ADDE88006BB7DE /* Main.storyboard */; };
 		959CC8D922ADDE8A006BB7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D822ADDE8A006BB7DE /* Assets.xcassets */; };
