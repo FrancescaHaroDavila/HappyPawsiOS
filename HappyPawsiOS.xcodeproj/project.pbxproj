@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */; };
 		83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471C22B212150045ACD5 /* CellProtocol.swift */; };
+		83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */; };
 		959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8D122ADDE88006BB7DE /* AppDelegate.swift */; };
 		959CC8D722ADDE88006BB7DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D522ADDE88006BB7DE /* Main.storyboard */; };
 		959CC8D922ADDE8A006BB7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D822ADDE8A006BB7DE /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
 		83C3471C22B212150045ACD5 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePetViewController.swift; sourceTree = "<group>"; };
 		959CC8CE22ADDE88006BB7DE /* HappyPawsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPawsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959CC8D122ADDE88006BB7DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959CC8D622ADDE88006BB7DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */,
+				83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				959CC8EB22ADDF2F006BB7DE /* User.swift in Sources */,
 				959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */,
 				83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */,
+				83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */,
 				959CC8FF22ADE04E006BB7DE /* SessionManager.swift in Sources */,
 				959CC8FD22ADE03C006BB7DE /* Networking.swift in Sources */,
 				83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */,
