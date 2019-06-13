@@ -6,7 +6,6 @@ target 'HappyPawsiOS' do
   use_frameworks!
 
   # Pods for HappyPawsiOS
-
-pod 'Alamofire'
+  pod 'Alamofire'
 
 end
