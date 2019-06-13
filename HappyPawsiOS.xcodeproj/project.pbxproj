@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */; };
+		83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471C22B212150045ACD5 /* CellProtocol.swift */; };
+		83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */; };
 		1643963122B18B7800EA34BD /* AddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643963022B18B7800EA34BD /* AddsViewController.swift */; };
 		269EC698C19B018D899D31BF /* Pods_HappyPawsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727DA679E3B46ABF758CE2F3 /* Pods_HappyPawsiOS.framework */; };
+		68ED770622B2371500AAC99F /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */; };
+		68ED770822B2394500AAC99F /* MainTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770722B2394500AAC99F /* MainTasksViewController.swift */; };
+		68ED770E22B2445000AAC99F /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770D22B2445000AAC99F /* RoundImageView.swift */; };
 		959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8D122ADDE88006BB7DE /* AppDelegate.swift */; };
 		959CC8D722ADDE88006BB7DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D522ADDE88006BB7DE /* Main.storyboard */; };
 		959CC8D922ADDE8A006BB7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959CC8D822ADDE8A006BB7DE /* Assets.xcassets */; };
@@ -23,12 +29,22 @@
 		959CC8FF22ADE04E006BB7DE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CC8FE22ADE04E006BB7DE /* SessionManager.swift */; };
 		95A421C822B23A400093D557 /* UserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A421C722B23A400093D557 /* UserNameViewController.swift */; };
 		95A421CB22B23A5E0093D557 /* UserPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A421CA22B23A5E0093D557 /* UserPasswordViewController.swift */; };
+		A9601BFC099881C0FA4AA8AE /* Pods_HappyPawsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86976DD794E7BD8C9CD8B6FF /* Pods_HappyPawsiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
+		83C3471C22B212150045ACD5 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePetViewController.swift; sourceTree = "<group>"; };
 		1643963022B18B7800EA34BD /* AddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddsViewController.swift; path = HappyPawsiOS/AddsViewController.swift; sourceTree = SOURCE_ROOT; };
 		198A42CCEF13B2CDD0712A3E /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		727DA679E3B46ABF758CE2F3 /* Pods_HappyPawsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyPawsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
+		68ED770722B2394500AAC99F /* MainTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTasksViewController.swift; path = "HappyPawsiOS/Custom Views/MainTasksViewController.swift"; sourceTree = SOURCE_ROOT; };
+		68ED770D22B2445000AAC99F /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		86976DD794E7BD8C9CD8B6FF /* Pods_HappyPawsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyPawsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4840BD711578433E8FDE7D /* Pods-HappyPawsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		959CC8CE22ADDE88006BB7DE /* HappyPawsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPawsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959CC8D122ADDE88006BB7DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959CC8D622ADDE88006BB7DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +62,7 @@
 		95A421C722B23A400093D557 /* UserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameViewController.swift; sourceTree = "<group>"; };
 		95A421CA22B23A5E0093D557 /* UserPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPasswordViewController.swift; sourceTree = "<group>"; };
 		F9C78F041F81BA7B56881D7A /* Pods-HappyPawsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.release.xcconfig"; path = "Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.release.xcconfig"; sourceTree = "<group>"; };
+		B39F84C2A235AFAEA224482B /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				269EC698C19B018D899D31BF /* Pods_HappyPawsiOS.framework in Frameworks */,
+				A9601BFC099881C0FA4AA8AE /* Pods_HappyPawsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +82,36 @@
 			isa = PBXGroup;
 			children = (
 				727DA679E3B46ABF758CE2F3 /* Pods_HappyPawsiOS.framework */,
+		2E38C01F2E822CFD0802133D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86976DD794E7BD8C9CD8B6FF /* Pods_HappyPawsiOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37DCA66B10ADC2A8E7A9FC2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B39F84C2A235AFAEA224482B /* Pods-HappyPawsiOS.debug.xcconfig */,
+				8C4840BD711578433E8FDE7D /* Pods-HappyPawsiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68ED770422B236E700AAC99F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */,
+				68ED770D22B2445000AAC99F /* RoundImageView.swift */,
+			);
+			path = "Custom Views";
+		83C3471B22B211F50045ACD5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83C3471C22B212150045ACD5 /* CellProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		959CC8C522ADDE88006BB7DE = {
@@ -75,6 +121,8 @@
 				959CC8CF22ADDE88006BB7DE /* Products */,
 				BC5F2606106508743E13816D /* Pods */,
 				10A8659389F444B12551EFDF /* Frameworks */,
+				37DCA66B10ADC2A8E7A9FC2A /* Pods */,
+				2E38C01F2E822CFD0802133D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +137,7 @@
 		959CC8D022ADDE88006BB7DE /* HappyPawsiOS */ = {
 			isa = PBXGroup;
 			children = (
+				68ED770422B236E700AAC99F /* Custom Views */,
 				959CC8EC22ADDF49006BB7DE /* App */,
 				959CC8E522ADDED0006BB7DE /* Models */,
 				959CC8ED22ADDF71006BB7DE /* Storyboards */,
@@ -149,7 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				95A421C922B23A460093D557 /* UserProfile */,
+				83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */,
+				83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */,
 				1643963022B18B7800EA34BD /* AddsViewController.swift */,
+				68ED770722B2394500AAC99F /* MainTasksViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +235,7 @@
 		959CC90122ADE075006BB7DE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				83C3471B22B211F50045ACD5 /* Protocols */,
 				959CC8D822ADDE8A006BB7DE /* Assets.xcassets */,
 			);
 			path = Utilities;
@@ -202,8 +255,13 @@
 			children = (
 				198A42CCEF13B2CDD0712A3E /* Pods-HappyPawsiOS.debug.xcconfig */,
 				F9C78F041F81BA7B56881D7A /* Pods-HappyPawsiOS.release.xcconfig */,
+		F7943BB072F097CB7F4D148E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */,
+				F74EE64530AE8C3DF7DD9C2C /* Pods-HappyPawsiOS.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,11 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 959CC8E022ADDE8A006BB7DE /* Build configuration list for PBXNativeTarget "HappyPawsiOS" */;
 			buildPhases = (
-				518D236424940C0538E726A5 /* [CP] Check Pods Manifest.lock */,
+				FA2D1417E409249057CD04F5 /* [CP] Check Pods Manifest.lock */,
 				959CC8CA22ADDE88006BB7DE /* Sources */,
 				959CC8CB22ADDE88006BB7DE /* Frameworks */,
 				959CC8CC22ADDE88006BB7DE /* Resources */,
-				CD61B9AEAEA5261F544604C8 /* [CP] Embed Pods Frameworks */,
+				A86A87F64B79B56006861FC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +338,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		518D236424940C0538E726A5 /* [CP] Check Pods Manifest.lock */ = {
+		A86A87F64B79B56006861FC9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,9 +346,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
@@ -298,10 +354,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD61B9AEAEA5261F544604C8 /* [CP] Embed Pods Frameworks */ = {
+		FA2D1417E409249057CD04F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,7 +365,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -320,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -333,11 +389,17 @@
 				95A421CB22B23A5E0093D557 /* UserPasswordViewController.swift in Sources */,
 				1643963122B18B7800EA34BD /* AddsViewController.swift in Sources */,
 				959CC8FB22ADE022006BB7DE /* NetworkingManager.swift in Sources */,
+				68ED770822B2394500AAC99F /* MainTasksViewController.swift in Sources */,
 				959CC8EB22ADDF2F006BB7DE /* User.swift in Sources */,
 				959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */,
+				83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */,
+				83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */,
 				959CC8FF22ADE04E006BB7DE /* SessionManager.swift in Sources */,
 				95A421C822B23A400093D557 /* UserNameViewController.swift in Sources */,
+				68ED770622B2371500AAC99F /* PetCollectionViewCell.swift in Sources */,
 				959CC8FD22ADE03C006BB7DE /* Networking.swift in Sources */,
+				68ED770E22B2445000AAC99F /* RoundImageView.swift in Sources */,
+				83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,17 +543,18 @@
 		};
 		959CC8E122ADDE8A006BB7DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 198A42CCEF13B2CDD0712A3E /* Pods-HappyPawsiOS.debug.xcconfig */;
+			baseConfigurationReference = 12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = 83JMLW3YKH;
 				INFOPLIST_FILE = "$(SRCROOT)/HappyPawsiOS/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,17 +563,18 @@
 		};
 		959CC8E222ADDE8A006BB7DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C78F041F81BA7B56881D7A /* Pods-HappyPawsiOS.release.xcconfig */;
+			baseConfigurationReference = F74EE64530AE8C3DF7DD9C2C /* Pods-HappyPawsiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = 83JMLW3YKH;
 				INFOPLIST_FILE = "$(SRCROOT)/HappyPawsiOS/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
