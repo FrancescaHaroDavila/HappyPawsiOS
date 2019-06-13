@@ -28,7 +28,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFu-NW-hwJ">
                                 <rect key="frame" x="82" y="536" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.66254276037216187" green="0.79962795972824097" blue="0.74111402034759521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.66274509803921566" green="0.80000000000000004" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3CY-P1-xSp"/>
                                 </constraints>
@@ -290,22 +290,15 @@
             </objects>
             <point key="canvasLocation" x="3370" y="310"/>
         </scene>
-        <!--Perfil-->
-        <scene sceneID="0Tm-L7-Y6P">
+        <!--UserProfile-->
+        <scene sceneID="cWH-0c-N8a">
             <objects>
-                <viewController id="wm7-Th-o5f" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aSA-c1-3Pp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.66254276040000004" green="0.7996279597" blue="0.74111402029999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="bmy-JH-OPR"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" image="user-icon" id="k1i-8b-YOk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PL0-3X-CAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="02p-PX-xxB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iow-0q-u0a"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aao-Qg-ruF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3370" y="-349"/>
+            <point key="canvasLocation" x="2817" y="422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ngQ-8R-T7a">
@@ -317,8 +310,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wm7-Th-o5f" kind="relationship" relationship="viewControllers" id="6PU-Sk-iJ6"/>
                         <segue destination="hdb-NV-2n3" kind="relationship" relationship="viewControllers" id="0QX-bF-g8J"/>
+                        <segue destination="02p-PX-xxB" kind="relationship" relationship="viewControllers" id="4sg-rf-OaC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUb-mF-ZL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -464,7 +457,6 @@
     <resources>
         <image name="paw-icon" width="34.666667938232422" height="34.666667938232422"/>
         <image name="paws" width="1024" height="1024"/>
-        <image name="user-icon" width="34.666667938232422" height="34.666667938232422"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="grK-6b-Htc"/>
