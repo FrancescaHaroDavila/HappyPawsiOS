@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */; };
+		83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471C22B212150045ACD5 /* CellProtocol.swift */; };
+		83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */; };
 		1643963122B18B7800EA34BD /* AddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643963022B18B7800EA34BD /* AddsViewController.swift */; };
 		68ED770622B2371500AAC99F /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */; };
 		68ED770822B2394500AAC99F /* MainTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ED770722B2394500AAC99F /* MainTasksViewController.swift */; };
@@ -27,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyPawsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
+		83C3471C22B212150045ACD5 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePetViewController.swift; sourceTree = "<group>"; };
 		1643963022B18B7800EA34BD /* AddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddsViewController.swift; path = HappyPawsiOS/AddsViewController.swift; sourceTree = SOURCE_ROOT; };
 		68ED770522B2371500AAC99F /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
 		68ED770722B2394500AAC99F /* MainTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTasksViewController.swift; path = "HappyPawsiOS/Custom Views/MainTasksViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -86,6 +93,12 @@
 				68ED770D22B2445000AAC99F /* RoundImageView.swift */,
 			);
 			path = "Custom Views";
+		83C3471B22B211F50045ACD5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83C3471C22B212150045ACD5 /* CellProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		959CC8C522ADDE88006BB7DE = {
@@ -169,6 +182,8 @@
 		959CC8F722ADDFD5006BB7DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				83C3471622B1D3FA0045ACD5 /* PetsViewController.swift */,
+				83C3471E22B29AC60045ACD5 /* CreatePetViewController.swift */,
 				1643963022B18B7800EA34BD /* AddsViewController.swift */,
 				68ED770722B2394500AAC99F /* MainTasksViewController.swift */,
 			);
@@ -204,9 +219,19 @@
 		959CC90122ADE075006BB7DE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				83C3471B22B211F50045ACD5 /* Protocols */,
 				959CC8D822ADDE8A006BB7DE /* Assets.xcassets */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F7943BB072F097CB7F4D148E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */,
+				F74EE64530AE8C3DF7DD9C2C /* Pods-HappyPawsiOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 959CC8E022ADDE8A006BB7DE /* Build configuration list for PBXNativeTarget "HappyPawsiOS" */;
 			buildPhases = (
-				999FAF6D34E7C6AC9413CE25 /* [CP] Check Pods Manifest.lock */,
+				FA2D1417E409249057CD04F5 /* [CP] Check Pods Manifest.lock */,
 				959CC8CA22ADDE88006BB7DE /* Sources */,
 				959CC8CB22ADDE88006BB7DE /* Frameworks */,
 				959CC8CC22ADDE88006BB7DE /* Resources */,
-				E1BDC34A01EFB1A30FF4C10B /* [CP] Embed Pods Frameworks */,
+				A86A87F64B79B56006861FC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,12 +307,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		999FAF6D34E7C6AC9413CE25 /* [CP] Check Pods Manifest.lock */ = {
+		A86A87F64B79B56006861FC9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
@@ -301,10 +330,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyPawsiOS/Pods-HappyPawsiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1BDC34A01EFB1A30FF4C10B /* [CP] Embed Pods Frameworks */ = {
+		FA2D1417E409249057CD04F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,10 +367,13 @@
 				68ED770822B2394500AAC99F /* MainTasksViewController.swift in Sources */,
 				959CC8EB22ADDF2F006BB7DE /* User.swift in Sources */,
 				959CC8D222ADDE88006BB7DE /* AppDelegate.swift in Sources */,
+				83C3471D22B212150045ACD5 /* CellProtocol.swift in Sources */,
+				83C3471F22B29AC60045ACD5 /* CreatePetViewController.swift in Sources */,
 				959CC8FF22ADE04E006BB7DE /* SessionManager.swift in Sources */,
 				68ED770622B2371500AAC99F /* PetCollectionViewCell.swift in Sources */,
 				959CC8FD22ADE03C006BB7DE /* Networking.swift in Sources */,
 				68ED770E22B2445000AAC99F /* RoundImageView.swift in Sources */,
+				83C3471722B1D3FA0045ACD5 /* PetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,17 +517,18 @@
 		};
 		959CC8E122ADDE8A006BB7DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B39F84C2A235AFAEA224482B /* Pods-HappyPawsiOS.debug.xcconfig */;
+			baseConfigurationReference = 12771A193F0C607414B656FD /* Pods-HappyPawsiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P5Y97WC5V3;
+				DEVELOPMENT_TEAM = 83JMLW3YKH;
 				INFOPLIST_FILE = "$(SRCROOT)/HappyPawsiOS/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -504,17 +537,18 @@
 		};
 		959CC8E222ADDE8A006BB7DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C4840BD711578433E8FDE7D /* Pods-HappyPawsiOS.release.xcconfig */;
+			baseConfigurationReference = F74EE64530AE8C3DF7DD9C2C /* Pods-HappyPawsiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P5Y97WC5V3;
+				DEVELOPMENT_TEAM = 83JMLW3YKH;
 				INFOPLIST_FILE = "$(SRCROOT)/HappyPawsiOS/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.HappyPawsiOS1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
